@@ -22,18 +22,29 @@ body {
     box-sizing: border-box;
     border: solid 1px #fff;
     width: 75%;
-    height: 65vh;
+    height: 70vh;
     margin-left: auto;
     margin-right: auto;
     padding: 1%;
 }
 
 .question-area {
-    width: 50%;
+    width: 75%;
     font-size: 2rem;
     margin: auto;
     padding: 50px 0;
     box-sizing: border-box;
-    border: solid 1px #fff;
-    border-color: red;
+    border: solid 3px #ff0000;
+    border-radius: 1.5625rem;
+}
+
+.answer-area {
+    width: 75%;
+    height: 50%;
+    font-size: 1.5rem;
+    padding: 20px 0;
+    margin:1.5rem auto;
+    box-sizing: border-box;
+    border: solid 3px #ff0000;
+    border-radius: 1.5625rem;
 }
