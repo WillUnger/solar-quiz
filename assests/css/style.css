@@ -40,11 +40,50 @@ body {
 
 .answer-area {
     width: 75%;
-    height: 50%;
+    height: 35%;
     font-size: 1.5rem;
     padding: 20px 0;
     margin:1.5rem auto;
     box-sizing: border-box;
     border: solid 3px #ff0000;
     border-radius: 1.5625rem;
+
+    display: grid;
+    grid-template-columns: 40% 40%; /* set column sizes here */
+    grid-template-rows: auto auto; /* we want two rows */
+    grid-gap: 0.4rem; /* how far between cells? */
+    
+    
+}
+
+.answer-area div {
+    border: solid 2px #fff;
+    border-radius: 1.5625rem;
+}
+
+
+
+.score-area {
+    margin: auto;
+    font-size: 1.2rem;
+    width: 20%;
+    height: 50vh;
+    position:relative;
+    margin: auto;
+}
+
+.score-area p {
+    color: #fff;
+    font-family: 'Teko', sans-serif;
+    letter-spacing: 0.2rem;
+}
+
+#score {
+    color: green;
+    font-weight: bold;
+}
+
+#incorrect {
+    color: red;
+    font-weight: bold;
 }
