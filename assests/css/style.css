@@ -49,9 +49,9 @@ body {
     border-radius: 1.5625rem;
 
     display: grid;
-    grid-template-columns: 48% 48%; /* set column sizes here */
-    grid-template-rows: auto auto; /* we want two rows */
-    grid-gap: 0.4rem; /* how far between cells? */
+    grid-template-columns: 48% 48%; 
+    grid-template-rows: auto auto; 
+    grid-gap: 0.4rem; 
     justify-content: space-evenly;
     
     
@@ -88,3 +88,37 @@ body {
     color: red;
     font-weight: bold;
 }
+ 
+/*-------------buttons*/
+
+.btn {
+    width: 100%;
+    height: 100%;
+    position:relative;
+    border-radius: 1.5625rem;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+/* .btn--big {
+    padding-top: 10px;
+    border-radius: 50%;
+    background-color: white;
+    border: 10px solid;
+    width: 100px;
+    height: 100px;
+    font-size: 3.2rem;
+    margin: 0 30px;
+    transition: all 0.5s;
+}
+
+.btn--big::after {
+    content: attr(data-type);
+    font-size: 1rem;
+    color: #445361;
+    position:relative;
+    left: -0.5em;
+    
+} */
