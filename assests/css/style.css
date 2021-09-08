@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
+
+
+body {
+    background: url("../images/milkyway.jpeg");
+    background-size: cover;
+}
+
+/*----------- Heading */
+
+.heading {
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 2rem;
+    color:blue;
+}
+
+/* --------- Game layout */
+
+.game-area {
+    background-color: rgba(51,102,153,.6);
+    box-sizing: border-box;
+    width: 75%;
+    height: 65vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+}
