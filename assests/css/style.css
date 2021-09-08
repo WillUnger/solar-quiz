@@ -49,9 +49,10 @@ body {
     border-radius: 1.5625rem;
 
     display: grid;
-    grid-template-columns: 40% 40%; /* set column sizes here */
+    grid-template-columns: 48% 48%; /* set column sizes here */
     grid-template-rows: auto auto; /* we want two rows */
     grid-gap: 0.4rem; /* how far between cells? */
+    justify-content: space-evenly;
     
     
 }
@@ -65,9 +66,9 @@ body {
 
 .score-area {
     margin: auto;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     width: 20%;
-    height: 50vh;
+    height: 10%;
     position:relative;
     margin: auto;
 }
