@@ -63,7 +63,6 @@ const max_score = 5
 const max_questions = 5
 
 
-
 //The game loads the first question straight away 
 //And starts as soon as the user answers 
 
