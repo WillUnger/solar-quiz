@@ -8,14 +8,12 @@ document.addEventListener("DOMContentLoaded"), function() {
         if (this.getAttribute("data-type") === "submit") {
             checkAnswer();
         } else {
-            let gameType = this.getAttribute("data-type");
-            runGame(gameType);
+            let gameQuiz = this.getAttribute("data-type");
+            runGame(gameQuiz);
         }
     });
 }
 }
-
-
 
 
 //Array of questions, options and answers//
@@ -68,3 +66,9 @@ function displayQuestion() {
     optionText.innerHTML = optionTag;
   
 }
+
+//The game loads the first question straight away 
+//And starts as soon as the user answers 
+
+
+

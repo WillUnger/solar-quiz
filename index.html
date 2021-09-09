@@ -10,15 +10,21 @@
     <title>Solar Quiz</title>
 </head>
 <body>
+
+    <!--Title-->
     <h1 class = "heading">
        <i class="fa-solid fa-planet-ringed"></i> Solar Quiz
     </h1>
+    
+    <!--game-area is the transparent blue that holds all other divs-->
     <div class = "game-area">
 
+    <!--Displays the question (written in game.js)-->
     <div class = "question-area">
         <h2 id="question"></h2>
     </div>
 
+    <!--Displays the clickable options in each individual div (written in game.js) -->
     <div class = "hide" id="option-container">
         <div  id = "choiceA"><button data-type = "submit" class = "btn choice--btn btn--A"></button></div>
         <div  id = "choiceB"><button data-type = "submit" class = "btn choice--btn btn--B"></button></div>
@@ -27,7 +33,7 @@
     </div>
 
     
-
+    <!--Displays the scores of right and wrong answers (calculated in game.js)-->
     <div id="score-area">
         <p class="scores"> Correct Answers <span id="score">0</span>  </p>
         <p class="scores"> Incorrect Answers <span id="incorrect">0</span> </p>

@@ -76,7 +76,7 @@ body {
 
 #score-area {
     margin: auto;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     width: 20%;
     height: 10%;
     position:relative;
@@ -122,3 +122,18 @@ body {
     outline: none;
 }
 
+/* --------- Media queries */
+
+@media (max-width: 650px) {
+    #open-container {
+        width: 60%;
+        height: auto;
+        box-sizing: border-box;
+        border: solid 3px #ff0000;
+        border-radius: 1.5625rem;
+
+     
+        
+    }
+}
+    
