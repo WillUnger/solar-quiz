@@ -74,7 +74,7 @@ body {
 
 
 
-.score-area {
+#score-area {
     margin: auto;
     font-size: 1.5rem;
     width: 20%;
@@ -83,7 +83,7 @@ body {
     margin: auto;
 }
 
-.score-area p {
+#score-area p {
     color: #fff;
     font-family: 'Teko', sans-serif;
     letter-spacing: 0.2rem;

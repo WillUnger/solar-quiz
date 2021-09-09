@@ -1,74 +1,24 @@
+// Wait for the DOM to finish loading before running the game
+// Get the button elements and add event listeners to them
 
-const questions = document.getElementById('question');
-
-
-
-
-              
-          
-
-      
-
-
-
-
-
-
-
-
-/**
-* The main game "loop", called when the script is first loaded
-* and after the user's answer has been processed
-*/
-function runGame(gameType) {}
+document.addEventListener("DOMContentLoaded"), function() {
+  let buttons = document.getElementsByTagName("button");
+  for (let button of buttons) {
+    button.addEventListener("click", function() {
+        if (this.getAttribute("data-type") === "submit") {
+            checkAnswer();
+        } else {
+            let gameType = this.getAttribute("data-type");
+            runGame(gameType);
+        }
+    });
+}
+}
 
 
 
 
-
-
-
-
-
-/**
-* Checks the answer against the first element in
-* the returned calculateCorrectAnswer array
-*/
-function checkAnswer() {}
-
-
-/**
-* Gets the operands (the numbers) and the operator (plus, minus etc)
-* directly from the dom, and returns the correct answer.
-*/
-function calculateCorrectAnswer() {}
-
-
-/**
-* Gets the current score from the DOM and increments it by 1
-*/
-function incrementScore() {
-
-    let oldScore = parseInt(document.getElementById("score").innerText);
-    document.getElementById("score").innerText = ++oldScore;
-  
-  }
-  
-  /**
-  * Gets the current tally of incorrect answers from the DOM and increments it by 1
-  */
-  function incrementWrongAnswer() {
-  
-    let oldScore = parseInt(document.getElementById("incorrect").innerText);
-    document.getElementById("incorrect").innerText = ++oldScore;
-    
-  }
-
-
-
-
-
-//questions
+//Array of questions, options and answers//
 let questions = [
   {
     numb: 1,
@@ -105,6 +55,8 @@ let questions = [
 //get questions and options from array//
 
 function displayQuestion() {
+
+  
     const questionText = document.getElementById("question");
     let questionTag = '<h2>'+ questions[0].question +'</h2>';
     questionText.innerHTML = questionTag;
@@ -114,4 +66,5 @@ function displayQuestion() {
                   + <div id = "choiceC"><button>+ questions[index].options[2] +</button></div>
                   + <div id = "choiceD"><button>+ questions[index].options[3] +</button></div>
     optionText.innerHTML = optionTag;
+  
 }
