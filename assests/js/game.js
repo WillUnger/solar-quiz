@@ -15,6 +15,15 @@ document.addEventListener("DOMContentLoaded"), function() {
 }
 }
 
+const question = document.getElementById('question');
+const options = Array.from(document.getElementsByClassName('choice--btn'));
+const scores = getElementsByClassName('scores');
+
+let currentQuestion = {}
+let answer = true
+let score = 0
+let availableQuestions = []
+
 
 //Array of questions, options and answers//
 let questions = [
@@ -50,25 +59,17 @@ let questions = [
   },  
 ]
 
-//get questions and options from array//
+const max_score = 5
+const max_questions = 5
 
-function displayQuestion() {
 
-  
-    const questionText = document.getElementById("question");
-    let questionTag = '<h2>'+ questions[0].question +'</h2>';
-    questionText.innerHTML = questionTag;
-    const optionText = document.getElementsByClassName("choice-btn");
-    let optionTag = <div id = "choiceA"><button>+ questions[index].options[0] +</button></div>
-                  + <div id = "choiceB"><button>+ questions[index].options[1] +</button></div>
-                  + <div id = "choiceC"><button>+ questions[index].options[2] +</button></div>
-                  + <div id = "choiceD"><button>+ questions[index].options[3] +</button></div>
-    optionText.innerHTML = optionTag;
-  
-}
 
 //The game loads the first question straight away 
 //And starts as soon as the user answers 
+
+
+
+
 
 
 
