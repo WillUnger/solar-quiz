@@ -101,3 +101,17 @@ let questions = [
     answer : "B. Proxima Centauri"
   },  
 ]
+
+//get questions and options from array//
+
+function displayQuestion() {
+    const questionText = document.getElementById("question");
+    let questionTag = '<h2>'+ questions[0].question +'</h2>';
+    questionText.innerHTML = questionTag;
+    const optionText = document.getElementsByClassName("choice-btn");
+    let optionTag = <div id = "choiceA"><button>+ questions[index].options[0] +</button></div>
+                  + <div id = "choiceB"><button>+ questions[index].options[1] +</button></div>
+                  + <div id = "choiceC"><button>+ questions[index].options[2] +</button></div>
+                  + <div id = "choiceD"><button>+ questions[index].options[3] +</button></div>
+    optionText.innerHTML = optionTag;
+}
