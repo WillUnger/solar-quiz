@@ -16,14 +16,14 @@
     <div class = "game-area">
 
     <div class = "question-area">
-        <h2 id="question">1. At the Sun’s Core, Nuclear Fusion converts Hydrogen into __________</h2>
+        <h2 id="question"></h2>
     </div>
 
-    <div class = "answer-area">
-        <div  id = "choiceA"><button class = "btn choice--btn btn--A">Answer A</button></div>
-        <div  id = "choiceB"><button class = "btn choice--btn btn--B">Answer B</button></div>
-        <div  id = "choiceC"><button class = "btn choice--btn btn--C">Answer C</button></div>
-        <div  id = "choiceD"><button class = "btn choice--btn btn--D">Answer D</button></div>
+    <div class = "hide" id="option-container">
+        <div  id = "choiceA"><button data-type = "submit" class = "btn choice--btn btn--A">Answer A</button></div>
+        <div  id = "choiceB"><button data-type = "submit" class = "btn choice--btn btn--B">Answer B</button></div>
+        <div  id = "choiceC"><button data-type = "submit" class = "btn choice--btn btn--C">Answer C</button></div>
+        <div  id = "choiceD"><button data-type = "submit" class = "btn choice--btn btn--D">Answer D</button></div>
     </div>
 
     
@@ -32,6 +32,8 @@
         <p class="scores"> Correct Answers <span id="score">0</span>  </p>
         <p class="scores"> Incorrect Answers <span id="incorrect">0</span> </p>
     </div>
+
+   
     </div>
 
     
