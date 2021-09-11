@@ -3,27 +3,27 @@ let questionList = [
   { 
     question : "1. Which one of these is NOT a moon of Jupiter?",
     options : ["A. Calisto", "B. Io", "C. Europa", "D. Miranda"],
-    answer : "D. Miranda"
+    correctAnswer : "D. Miranda"
   },
   {  
     question : "2. Which planet has the coolest atmosphere?",
     options : ["A. Saturn", "B. Uranus", "C. Neptune", "D. Pluto"],
-    answer : "B. Uranus"
+    correctAnswer : "B. Uranus"
   },
   { 
     question : "3. Which one of these planets rotates on its side?",
     options : ["A. Saturn", "B. Uranus", "C. Neptune", "D. Jupiter"],
-    answer : "B. Uranus"
+    correctAnswer : "B. Uranus"
   }, 
   { 
     question : "4. At the Sun’s Core, Nuclear Fusion converts Hydrogen to ________",
     options : ["A. Plutonium", "B. Helium", "C. Potassium", "D. Radium"],
-    answer : "B. Helium"
+    correctAnswer : "B. Helium"
   }, 
   {
     question : "5. The nearest star to our Solar System is?",
     options : ["A. Epsilon Indi", "B. Proxima Centauri", "C. Sirius", "D. DX Cancri"],
-    answer : "B. Proxima Centauri"
+    correctAnswer : "B. Proxima Centauri"
   },  
 ];
 
@@ -78,7 +78,25 @@ function startGame() {
   remainingQuestions = questionList.length;
 }
 
+// checkAnswer Function //
 
+function checkAnswer() {
+  answers.forEach(answer => {
+    answer.addEventListener('click', event => {
+      let selection = event.target.innerText;
+      if (selection === questionList[currentQuestion].correctAnswer) {
+        score++;
+      }
+
+      document.getElementById("running-score").innerHTML = "Current Score <br>" + score + "/5";
+      getQuestions();
+      remainingQuestions--;
+      document.getElementById('remaining-questions').innerHTML = "Questions remaining <br>" + remainingQuestions + "/5";
+      let username = document.getElementById("username-input").value;
+            document.getElementById("final-score").innerHTML = username + ", you scored " + score + " out of " + questionList.length;
+    });
+  });
+}
 
 
 
