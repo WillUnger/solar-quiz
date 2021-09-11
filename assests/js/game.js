@@ -109,6 +109,12 @@ function getQuestions() {
   }
 }
 
+/** Assigning Questions to each option div */
+document.getElementById("quiz-questions").innerHTML = questionList[currentQuestion].question;
+    document.getElementById("button-a").innerHTML = questionList[currentQuestion].options[0];
+    document.getElementById("button-b").innerHTML = questionList[currentQuestion].options[1];
+    document.getElementById("button-c").innerHTML = questionList[currentQuestion].options[2];
+    document.getElementById("button-d").innerHTML = questionList[currentQuestion].options[3];
 
 function visitPage() {
   window.location.href = "#header";

@@ -44,7 +44,7 @@
    <!--Quiz Section - This displays the Questions, Options, Current-Scores and Questions Remaining--> 
     
    <section>
-    <div class="game-area" id="quiz-div">
+    <div class="game-area" id="quiz-div" style="display: none;">
         
         <!--Div for Displaying Questions-->
         <div class="question-area">
@@ -99,7 +99,7 @@
            <button class="show-answers btn" id="show-answer-button"></button>
            </div>
            <div class="restart-quiz-box">
-            <button class="show-answers btn" type="button">Restart<br class="button-break">
+            <button class="show-answers btn" type="button" onclick="visitPage(); showHide('answers-container'); showHide('final-score-div');">Restart<br class="button-break">
             Quiz</button>
             </div>
        </div>
