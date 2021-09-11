@@ -27,6 +27,9 @@ body {
     margin-right: auto;
     padding: 1%;
 }
+
+/* Buttons */
+
 .btn {
     width: 100%;
     height: 100%;
@@ -91,7 +94,15 @@ body {
     margin-bottom: 5%;
 }
 
+.start-btn {
+    width: 20%;
+    height: 20%;
+    position: relative;
+    margin-left: 40%;
+    margin-right: 50%;
+}
 
+/*-----Quiz Area----*/
 
 .question-area {
     width: 75%;
@@ -109,11 +120,8 @@ body {
     position:relative;
     margin: auto;
     text-align: center;
-
 }
     
-
-
 #option-container {
     width: 75%;
     height: 35%;
@@ -135,15 +143,12 @@ body {
     border-radius: 1.5625rem;
 }
 
-
-
-#score-area {
-    margin: auto;
-    font-size: 1.4rem;
-    width: 20%;
-    height: 10%;
-    position:relative;
-    margin: auto;
+.score-counter-area {
+    width:100%;
+    font-size:1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
 }
 
 #score-area p {
