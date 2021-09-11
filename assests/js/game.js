@@ -1,4 +1,6 @@
-//Array of questions, options and answers//
+/**
+ * Array of questions, options and answers
+ */ 
 let questionList = [
   { 
     question : "1. Which one of these is NOT a moon of Jupiter?",
@@ -32,8 +34,9 @@ let remainingQuestions;
 let score;
 let answers = Array.from(document.getElementsByClassName("answer"));
 
-//Opening page DOM - focus on user-input
-
+/**
+ * Opening page DOM - focus on user-input
+*/
 window.addEventListener('DOMEventLoaded',(event) => {
   let submitButton = document.getElementById('username-submit');
   if (submitButton.style.display = 'none');
@@ -42,7 +45,9 @@ window.addEventListener('DOMEventLoaded',(event) => {
 
 document.getElementById('username-input').focus();
 
-//Hide and Show Sections//
+/**
+ * Hide and Show Sections
+ */ 
 function showHide(target) {
   let targetContainer = document.getElementById(target);
   if (targetContainer.style.display === "none") {
@@ -53,7 +58,7 @@ function showHide(target) {
 }
 
 
-document.getElementById('username-input').addEventListener('keybown', function (event) {
+document.getElementById("username-input").addEventListener("keydown", function (event) {
   if (event.key === "Enter") {
       displayMessage();
       showHide('intro-div');
@@ -61,25 +66,28 @@ document.getElementById('username-input').addEventListener('keybown', function (
   }
 });
 
-//  Welcome Message and Start Button //
-
+/**
+ *  Welcome Message and Start Button 
+ */ 
  function displayWelcomeMessage() {
    let username = document.getElementById('username-input').value;
    document.getElementById('intro-message').textContent = "Welcome " + username + ", to the Solar System Quiz!";
  }
 
-// startGame Function //
-
+/**
+ * startGame Function 
+*/
 function startGame() {
-  score = 0
-  currentQuestion = -1
+  score = 0;
+  currentQuestion = -1;
   getQuestions();
   checkAnswer();
   remainingQuestions = questionList.length;
 }
 
-// checkAnswer Function //
-
+/**
+ * checkAnswer Function 
+*/
 function checkAnswer() {
   answers.forEach(answer => {
     answer.addEventListener('click', event => {
@@ -92,13 +100,16 @@ function checkAnswer() {
       getQuestions();
       remainingQuestions--;
       document.getElementById('remaining-questions').innerHTML = "Questions remaining <br>" + remainingQuestions + "/5";
+      
       let username = document.getElementById("username-input").value;
             document.getElementById("final-score").innerHTML = username + ", you scored " + score + " out of " + questionList.length;
     });
   });
 }
 
-// getQuestions Function //
+/** 
+ * getQuestions Function
+ */
 
 function getQuestions() {
   currentQuestion = currentQuestion + 1;
@@ -121,12 +132,17 @@ document.getElementById("quiz-questions").innerHTML = questionList[currentQuesti
 }
 
 /**
- * Function to reset the game (reloads page from the cache)
+ * Restart the game using the Restart Buttons
  */
 
 function resetGame() {
   document.location.reload();
 }
+
+
+/**
+ * Brings you back to the start
+ */
 
 
 function visitPage() {
