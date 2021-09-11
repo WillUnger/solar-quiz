@@ -151,38 +151,36 @@ body {
     justify-content:space-between;
 }
 
-#score-area p {
-    color: #fff;
+.current-score{
+    width: 100%;
+}
+.questions-remaining{
+    width: 100%;
+}
+
+.running-totals {
+    width:90%;
+    margin-top: 5%;
+    border-radius: 1.5625;
+    border: solid 0.5px #000;
+    background-color: #fff;
+    text-align:center;
+}
+
+/*---Final Score Section---*/
+
+.final-score{
+    margin-left: 5%;
+    margin-right: 5%;
     font-family: 'Teko', sans-serif;
-    letter-spacing: 0.2rem;
-}
-
-#score {
-    color: green;
-    font-weight: bold;
-}
-
-#incorrect {
-    color: red;
-    font-weight: bold;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 2%;
+    text-align: center;
 }
  
-/*-------------buttons*/
 
 
 
-/* --------- Media queries */
 
-@media (max-width: 650px) {
-    #open-container {
-        width: 60%;
-        height: auto;
-        box-sizing: border-box;
-        border: solid 3px #ff0000;
-        border-radius: 1.5625rem;
-
-     
-        
-    }
-}
     
