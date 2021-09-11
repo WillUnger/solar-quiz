@@ -96,12 +96,12 @@
        <!--Div that displays the two Buttons - Show Answers and Restart Quiz-->
        <div class="answers-restart-div">
            <div class="restart-quiz-box">
-            <button class="show-answers btn" id="show-answer-button" onclick="visitPage(); showHide('answers-container'); showHide('final-score-div');" 
+            <button class="final-restart-btn btn" id="show-answer-button" onclick="visitPage(); showHide('answers-container'); showHide('final-score-div');" 
             type="button">Show<br class="button-break">
                 Answers</button>
            </div>
            <div class="restart-quiz-box">
-            <button class="show-answers btn" type="button" onclick="visitPage(); showHide('answers-container'); showHide('final-score-div'); resetGame()">Restart<br class="button-break">
+            <button class="final-restart-btn btn" type="button" onclick="visitPage(); showHide('answers-container'); showHide('final-score-div'); resetGame()">Restart<br class="button-break">
             Quiz</button>
             </div>
        </div>
@@ -115,18 +115,18 @@
         <div id="answers">
             <h1 class="page-message">Answers</h1>
             <h2>1. Which one of these is NOT a moon of Jupiter?</h2>
-            <p>D. Miranda</p>
+            <p>Miranda</p>
             <h2>2. Which planet has the coolest atmosphere?</h2>
-            <p>B. Uranus</p>
+            <p>Uranus</p>
             <h2>3. Which one of these planets rotates on its side?</h2>
-            <p>C. Uranus</p>
+            <p>Uranus</p>
             <h2>4. At the Sun’s Core, Nuclear Fusion converts Hydrogen to</h2>
-            <p>A. Helium</p>
+            <p>Helium</p>
             <h2>5. The nearest star to our Solar System is?</h2>
-            <p>B. Proxima Centauri</p>
+            <p>Proxima Centauri</p>
         </div>
         <div class="restart-quiz-box">
-            <button class="btn" onclick="visitPage(); showHide('final-score-div'); showHide('username-div'); resetGame()"  type="button">Restart Quiz</button>
+            <button class="btn final-restart-btn" onclick="visitPage(); showHide('final-score-div'); showHide('username-div'); resetGame()"  type="button">Restart Quiz</button>
         </div>
     </div>
 </section>

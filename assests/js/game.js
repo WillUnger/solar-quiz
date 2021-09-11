@@ -4,28 +4,28 @@
 let questionList = [
   { 
     question : "1. Which one of these is NOT a moon of Jupiter?",
-    options : ["A. Calisto", "B. Io", "C. Europa", "D. Miranda"],
-    correctAnswer : "D. Miranda"
+    options : ["Callisto", "Io", "Europa", "Miranda"],
+    correctAnswer : "Miranda"
   },
   {  
     question : "2. Which planet has the coolest atmosphere?",
-    options : ["A. Saturn", "B. Uranus", "C. Neptune", "D. Pluto"],
-    correctAnswer : "B. Uranus"
+    options : ["Saturn", "Uranus", "Neptune", "Pluto"],
+    correctAnswer : "Uranus"
   },
   { 
     question : "3. Which one of these planets rotates on its side?",
-    options : ["A. Saturn", "B. Neptune", "C. Uranus", "D. Jupiter"],
-    correctAnswer : "C. Uranus"
+    options : ["Saturn", "Neptune", "Uranus", "Jupiter"],
+    correctAnswer : "Uranus"
   }, 
   { 
     question : "4. At the Sun’s Core, Nuclear Fusion converts Hydrogen to ________",
-    options : ["A. Helium", "B. Plutonium", "C. Potassium", "D. Radium"],
-    correctAnswer : "A. Helium"
+    options : ["Helium", "Plutonium", "Potassium", "Radium"],
+    correctAnswer : "Helium"
   }, 
   {
     question : "5. The nearest star to our Solar System is?",
-    options : ["A. Epsilon Indi", "B. Proxima Centauri", "C. Sirius", "D. DX Cancri"],
-    correctAnswer : "B. Proxima Centauri"
+    options : ["Epsilon Indi", "Proxima Centauri", "Sirius", "DX Cancri"],
+    correctAnswer : "Proxima Centauri"
   },  
 ];
 
