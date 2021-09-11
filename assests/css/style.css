@@ -236,4 +236,28 @@ body {
 }
 
 
+/* Media Queries */
+
+/*user-input page*/
+@media only screen and (max-width: 700px) {
+    .heading {
+        text-align: center;
+        font-size: 2rem;
+        letter-spacing: 1rem;
+        margin-bottom: 2rem;
+        color:blue;
+    }
+}
+@media only screen and (max-width: 460px) {
+    .btn {
+        width: 20%;
+        height: 40%;
+        position:relative;
+        border-radius: 1.5625rem;
+        font-family: 'Teko', sans-serif;
+        font-weight: bolder;
+        font-size: 0.8rem;
+        text-align: center;
+    }
+}
     
