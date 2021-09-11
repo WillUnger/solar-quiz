@@ -27,6 +27,18 @@ let questionList = [
   },  
 ];
 
+let currentQuestion;
+let remainingQuestions;
+let score;
+let answers = Array.from(document.getElementsByClassName("answer"));
+
+//Opening page DOM - focus on user-input
+
+window.addEventListener('DOMEventLoaded',(event) => {
+  let submitButton = document.getElementById('username-submit');
+  if (submitButton.style.display = 'none');
+  submitButton.style.display = 'block';
+});
 
 
 
