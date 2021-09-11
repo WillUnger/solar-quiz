@@ -187,7 +187,9 @@ body {
     display: block;
 }
 
-
+#intro-div {
+    display: none;
+}
 
 
     

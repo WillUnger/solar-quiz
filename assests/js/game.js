@@ -41,6 +41,8 @@ window.addEventListener('DOMEventLoaded',(event) => {
 });
 
 document.getElementById('username-input').focus();
+
+//Hide and Show Sections//
 function showHide(target) {
   let targetContainer = document.getElementById(target);
   if (targetContainer.style.display === "none") {
@@ -49,9 +51,15 @@ function showHide(target) {
       targetContainer.style.display = "none";
   }
 }
-//Hide and Show Sections//
 
-document.getElementById('username-input').focus
+
+document.getElementById('username-input').addEventListener('keybown', function (event) {
+  if (event.key === "Enter") {
+      displayMessage();
+      showHide('intro-div');
+      showHide('username-div');
+  }
+});
 
 
 
