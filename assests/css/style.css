@@ -121,6 +121,13 @@ body {
     margin: auto;
     text-align: center;
 }
+
+.question{
+    width: 98%;  
+    font-family: 'Teko', sans-serif;  
+    text-align: center;
+    color: #fff;
+}
     
 #option-container {
     width: 75%;
@@ -168,7 +175,9 @@ body {
 }
 
 /*---Final Score Section---*/
-
+.button-break{
+    display: block;
+}
 .final-score{
     margin-left: 5%;
     margin-right: 5%;
@@ -187,7 +196,7 @@ body {
     display: block;
 }
 
-#intro-div {
+#intro-div, #question-div, #final-score-div, #answers-container, #quiz-div {
     display: none;
 }
 

@@ -96,7 +96,9 @@
        <!--Div that displays the two Buttons - Show Answers and Restart Quiz-->
        <div class="answers-restart-div">
            <div class="restart-quiz-box">
-           <button class="show-answers btn" id="show-answer-button"></button>
+            <button class="show-answers btn" id="show-answer-button" onclick="visitPage(); showHide('answers-container'); showHide('final-score-div');" 
+            type="button">Show<br class="button-break">
+                Answers</button>
            </div>
            <div class="restart-quiz-box">
             <button class="show-answers btn" type="button" onclick="visitPage(); showHide('answers-container'); showHide('final-score-div');">Restart<br class="button-break">
@@ -109,7 +111,7 @@
    <!--Section that displays the answers to the Quiz Questions-->
 
    <section>
-    <div class="game-area" id="answers-container">
+    <div class="game-area" id="answers-container" style="display: none;">
         <div id="answers">
             <h1 class="page-message">Answers</h1>
 					<h2>1. Which one of these is NOT a moon of Jupiter?</h2>
@@ -124,7 +126,7 @@
 					<p>A. Proxima Centauri</p>
         </div>
         <div class="restart-quiz-box"></div>
-        <button class="show-answers btn" type="button">Restart Quiz</button>
+        <button class="show-answers btn" type="button" onclick="visitPage(); showHide('final-score-div'); showHide('username-div'); resetGame()">Restart Quiz</button>
     </div>
    </section>
     

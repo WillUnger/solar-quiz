@@ -12,13 +12,13 @@ let questionList = [
   },
   { 
     question : "3. Which one of these planets rotates on its side?",
-    options : ["A. Saturn", "B. Uranus", "C. Neptune", "D. Jupiter"],
-    correctAnswer : "B. Uranus"
+    options : ["A. Saturn", "B. Neptune", "C. Uranus", "D. Jupiter"],
+    correctAnswer : "C. Uranus"
   }, 
   { 
     question : "4. At the Sun’s Core, Nuclear Fusion converts Hydrogen to ________",
-    options : ["A. Plutonium", "B. Helium", "C. Potassium", "D. Radium"],
-    correctAnswer : "B. Helium"
+    options : ["A. ", "B. Plutonium", "C. Potassium", "D. Radium"],
+    correctAnswer : "A. Helium"
   }, 
   {
     question : "5. The nearest star to our Solar System is?",
@@ -72,7 +72,7 @@ document.getElementById('username-input').addEventListener('keybown', function (
 
 function startGame() {
   score = 0
-  currentQuestion = 0
+  currentQuestion = -1
   getQuestions();
   checkAnswer();
   remainingQuestions = questionList.length;
@@ -107,14 +107,27 @@ function getQuestions() {
         showHide('question-div');
         showHide('quiz-div');    
   }
-}
 
-/** Assigning Questions to each option div */
+
+/** 
+ * Assigning Questions to each option div 
+ */
 document.getElementById("quiz-questions").innerHTML = questionList[currentQuestion].question;
     document.getElementById("button-a").innerHTML = questionList[currentQuestion].options[0];
     document.getElementById("button-b").innerHTML = questionList[currentQuestion].options[1];
     document.getElementById("button-c").innerHTML = questionList[currentQuestion].options[2];
     document.getElementById("button-d").innerHTML = questionList[currentQuestion].options[3];
+
+}
+
+/**
+ * Function to reset the game (reloads page from the cache)
+ */
+
+function resetGame() {
+  document.location.reload();
+}
+
 
 function visitPage() {
   window.location.href = "#header";
