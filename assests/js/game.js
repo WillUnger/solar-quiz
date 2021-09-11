@@ -98,6 +98,21 @@ function checkAnswer() {
   });
 }
 
+// getQuestions Function //
+
+function getQuestions() {
+  currentQuestion = currentQuestion + 1;
+  if (currentQuestion >= questionList.length) {
+    showHide('final-score-div');
+        showHide('question-div');
+        showHide('quiz-div');    
+  }
+}
+
+
+function visitPage() {
+  window.location.href = "#header";
+}
 
 
 
