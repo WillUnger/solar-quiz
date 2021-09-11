@@ -14,17 +14,30 @@
     <!--Header-->
     <header><h1 class="heading">The Solar System</h1></header>
 
-    <!--Div for the Username Input and Submit Button-->
+    <!--Section for the Username Input and Submit Button-->
     <section>
         <div class="game-area" id="username-div">
             <h2 class="page-message">Welcome!</h2>
 
         <!--Username Input-->    
-            <div class="enter-username"></div>
+            <div class="enter-username">
             <label id="username-label" for="username-input">Please Enter Your Name: </label>
             <input id="username-input" type="text" name="username" placeholder="Enter Name Here" required>
         <!--Submit Button-->
-        
+            <input id="username-submit" class="btn start-btn" type="submit">
+        </div>
+        </div>
+    </section>
+
+    <!--Section for the Welcome Message and Start Button-->
+    <section>
+        <div class="game-area" id="intro-div">
+            <h2 id="intro-message">x</h2> <!--Written in game.js-->
+            <p>To Begin the Quiz, Please Hit The Start-Quiz Button</p>
+        <!--Start Button-->
+            <div class="start-button-div">
+                <button class="btn start-btn">Start Quiz!</button>
+            </div>
         </div>
     </section>
      
