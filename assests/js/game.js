@@ -61,14 +61,22 @@ document.getElementById('username-input').addEventListener('keybown', function (
   }
 });
 
-// function to display Welcome Message and Start Button //
+//  Welcome Message and Start Button //
 
  function displayWelcomeMessage() {
    let username = document.getElementById('username-input').value;
    document.getElementById('intro-message').textContent = "Welcome " + username + ", to the Solar System Quiz!";
  }
 
- 
+// startGame Function //
+
+function startGame() {
+  score = 0
+  currentQuestion = 0
+  getQuestions();
+  checkAnswer();
+  remainingQuestions = questionList.length;
+}
 
 
 
