@@ -64,7 +64,12 @@ body {
     position: relative;
     margin: auto;
 }
-
+#username-input{
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-bottom: 5%;
+    height: 2rem;   
+}
 .enter-username{
     width:100%;
     font-family:'Teko', sans-serif; 
@@ -192,6 +197,32 @@ body {
     width: 48%;
     margin-left: auto;
     margin-right: auto;
+}
+
+.answers-restart-box{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Section for Answers */
+#answers-container h2{
+    color:#fff;
+    font-family: 'Teko', sans-serif;
+    font-size: 1.3rem;
+    letter-spacing: 0.2rem;
+}
+
+#answers-container p{
+    color:#fff;
+    font-family: 'Teko', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    margin-top: 1%;
+    position:relative;
 }
 
 /* JS Functions */

@@ -17,7 +17,7 @@ let questionList = [
   }, 
   { 
     question : "4. At the Sun’s Core, Nuclear Fusion converts Hydrogen to ________",
-    options : ["A. ", "B. Plutonium", "C. Potassium", "D. Radium"],
+    options : ["A. Helium", "B. Plutonium", "C. Potassium", "D. Radium"],
     correctAnswer : "A. Helium"
   }, 
   {

@@ -101,7 +101,7 @@
                 Answers</button>
            </div>
            <div class="restart-quiz-box">
-            <button class="show-answers btn" type="button" onclick="visitPage(); showHide('answers-container'); showHide('final-score-div');">Restart<br class="button-break">
+            <button class="show-answers btn" type="button" onclick="visitPage(); showHide('answers-container'); showHide('final-score-div'); resetGame()">Restart<br class="button-break">
             Quiz</button>
             </div>
        </div>
@@ -114,21 +114,22 @@
     <div class="game-area" id="answers-container" style="display: none;">
         <div id="answers">
             <h1 class="page-message">Answers</h1>
-					<h2>1. Which one of these is NOT a moon of Jupiter?</h2>
-					<p>D. Miranda</p>
-					<h2>2. Which planet has the coolest atmosphere?</h2>
-					<p>D. Uranus</p>
-					<h2>3. Which one of these planets rotates on its side?</h2>
-					<p>B. Uranus</p>
-					<h2>4. At the Sun’s Core, Nuclear Fusion converts Hydrogen to</h2>
-					<p>D. Helium</p>
-					<h2>5. The nearest star to our Solar System is?</h2>
-					<p>A. Proxima Centauri</p>
+            <h2>1. Which one of these is NOT a moon of Jupiter?</h2>
+            <p>D. Miranda</p>
+            <h2>2. Which planet has the coolest atmosphere?</h2>
+            <p>D. Uranus</p>
+            <h2>3. Which one of these planets rotates on its side?</h2>
+            <p>B. Uranus</p>
+            <h2>4. At the Sun’s Core, Nuclear Fusion converts Hydrogen to</h2>
+            <p>D. Helium</p>
+            <h2>5. The nearest star to our Solar System is?</h2>
+            <p>A. Proxima Centauri</p>
         </div>
-        <div class="restart-quiz-box"></div>
-        <button class="show-answers btn" type="button" onclick="visitPage(); showHide('final-score-div'); showHide('username-div'); resetGame()">Restart Quiz</button>
+        <div class="restart-quiz-box">
+            <button class="btn" onclick="visitPage(); showHide('final-score-div'); showHide('username-div'); resetGame()"  type="button">Restart Quiz</button>
+        </div>
     </div>
-   </section>
+</section>
     
 
 
