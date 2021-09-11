@@ -45,10 +45,12 @@
     
    <section>
     <div class="game-area" id="quiz-div">
+        
+        <!--Div for Displaying Questions-->
         <div class="question-area">
-            <div class="question">
-            <h3 id="quiz-questions">x</h3>
-        </div>
+            <div class="question"><h3 id="quiz-questions">x</h3></div>
+
+        <!--Div for Displaying Options-->
         <div id="option-container">
             <div class="answer-a"><button class="answer-options answer btn"
                     id="button-a">x</button>
@@ -66,6 +68,8 @@
                     id="button-d">x</button>
             </div>
     </div>
+
+    <!--Div for Displaying Current Scores and Remaining Questions-->
     <div class="score-counter-area">
         <div class="current-score">
             <p class="running-totals" id="running-score">Current Score
@@ -79,6 +83,26 @@
 </div>
 </div>
     </div>
+   </section>
+
+   <!--Section for Final-Score, Revealing the Answers and Restart Quiz Button-->
+   
+   <section>
+   <div class="game-area" id="final-score-div">
+       <h2 class="page-message">Final Score</h2>
+       <div class="final-score">
+           <p id="final-score"></p>
+       </div>
+       <div class="answers-restart-div">
+           <div class="restart-quiz-box">
+           <button class="show-answers btn" id="show-answer-button"></button>
+           </div>
+           <div class="restart-quiz-box">
+            <button class="show-answers btn" type="button">Restart<br class="button-break">
+            Quiz</button>
+            </div>
+       </div>
+   </div>
    </section>
     
     
