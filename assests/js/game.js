@@ -40,6 +40,18 @@ window.addEventListener('DOMEventLoaded',(event) => {
   submitButton.style.display = 'block';
 });
 
+document.getElementById('username-input').focus();
+function showHide(target) {
+  let targetContainer = document.getElementById(target);
+  if (targetContainer.style.display === "none") {
+      targetContainer.style.display = "block";
+  } else {
+      targetContainer.style.display = "none";
+  }
+}
+//Hide and Show Sections//
+
+document.getElementById('username-input').focus
 
 
 
