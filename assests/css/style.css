@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
 
-
 body {
     background: url("../images/milkyway.jpeg");
     background-size: cover;
@@ -12,10 +11,11 @@ body {
     text-align: center;
     font-size: 3rem;
     letter-spacing: 2rem;
+    margin-bottom: 3rem;
     color:blue;
 }
 
-/* --------- Game layout */
+/* --------- Area common to all sections */
 
 .game-area {
     background-color: rgba(51,102,153,.6);
@@ -57,14 +57,12 @@ body {
     box-sizing: border-box;
     border: solid 3px #ff0000;
     border-radius: 1.5625rem;
-
+/* This stacks the options 2X2 */
     display: grid;
     grid-template-columns: 48% 48%; 
     grid-template-rows: auto auto; 
     grid-gap: 0.4rem; 
-    justify-content: space-evenly;
-    
-    
+    justify-content: space-evenly;        
 }
 
 #option-container div {
