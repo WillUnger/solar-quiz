@@ -73,6 +73,15 @@ Live Website - https://willunger.github.io/solar-system-quiz/
 <img src="assets/images/performance-test.png" alt="Screenshot of Performance Test">
 
 
+# Technologies Used
+
+* HTML
+* CSS
+* Javascript
+
+* Also used github and gitpod - for use in pushing and storing the project.
+
+
 # Unfixed Bugs
 
 * Some of the responsivenss is lacking particularly in the Options buttons. 
