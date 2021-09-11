@@ -93,6 +93,7 @@ The site was deployed to GitHub pages. The steps to deploy are as follows:
 
 * The Fonts used can be sourced from https://fonts.google.com/
 * The images and particular fonts used are mentioned throughout the README.md
+* he information used to make the content came mainly from the NASA https://www.nasa.gov, as well as my own knowledge on the subject
 * W3schools, Slack Community have been a huge help as I found Javascript very difficult
 
 Of course, I must thank my mentor - Richard Wells - Again, always encouraging and helpful!
