@@ -11,12 +11,12 @@
 </head>
 <body>
 
-    <!--Header-->
-    <header><h1 class="heading">The Solar System</h1></header>
+        <!--Header-->
+        <header><h1 class="heading">The Solar System</h1></header>
 
     <!--Section for the Username Input and Submit Button-->
-    <section>
-        <div class="game-area" id="username-div">
+<section>
+    <div class="game-area" id="username-div">
             <h2 class="page-message">Welcome!</h2>
 
         <!--Username Input-->    
@@ -24,33 +24,34 @@
             <label id="username-label" for="username-input">Please Enter Your Name: </label>
             <input id="username-input" type="text" name="username" placeholder="Enter Name Here" required="">
         <!--Submit Button-->
-            <input id="username-submit" class="btn start-btn" type="submit" type="text" onclick="displayWelcomeMessage(); showHide('intro-div'); showHide('username-div')">
+            <input id="username-submit" class="btn start-btn" type="submit" onclick="displayWelcomeMessage(); showHide('intro-div'); showHide('username-div')">
         </div>
-        </div>
-    </section>
+    </div>
+</section>
 
     <!--Section for the Welcome Message and Start Button-->
-    <section>
+<section>
         <div class="game-area" id="intro-div" style="display: none;">
             <h2 id="intro-message">x</h2> <!--Written in game.js-->
             <p>To Begin the Quiz, Please Hit The Start-Quiz Button</p>
         <!--Start Button-->
             <div class="start-button-div">
-                <button class="btn start-btn" onclick ="startGame(); showHide('intro-div'); showHide('quiz-div'); showHide('question-div'); visitPage()">Start Quiz!</button>
+                <button class="btn start-btn" 
+                onclick ="startGame(); showHide('intro-div'); showHide('quiz-div'); showHide('question-div'); visitPage()">Start Quiz!</button>
             </div>
         </div>
-    </section>
+</section>
      
    <!--Quiz Section - This displays the Questions, Options, Current-Scores and Questions Remaining--> 
     
-   <section>
+<section>
     <div class="game-area" id="quiz-div" style="display: none;">
         
-        <!--Div for Displaying Questions-->
+        <!--Div for Displaying Questions--><!--Questions written in game.js-->
         <div class="question-area">
             <div class="question"><h3 id="quiz-questions">x</h3></div>
 
-        <!--Div for Displaying Options-->
+        <!--Div for Displaying Options--><!--Options written in game.js-->
         <div id="option-container">
             <div class="answer-a"><button class="answer-options answer btn"
                     id="button-a">x</button>
@@ -80,14 +81,13 @@
             </p>
         </div>
     </div>
-</div>
-</div>
     </div>
-   </section>
+    </div>
+</section>
 
    <!--Section for Final-Score, Revealing the Answers and Restart Quiz Button-->
    
-   <section>
+<section>
    <div class="game-area" id="final-score-div" style="display: none;">
        <h2 class="page-message">Final Score</h2>
        <div class="final-score">
@@ -96,21 +96,23 @@
        <!--Div that displays the two Buttons - Show Answers and Restart Quiz-->
        <div class="answers-restart-div">
            <div class="restart-quiz-box">
-            <button class="final-restart-btn btn" id="show-answer-button" onclick="visitPage(); showHide('answers-container'); showHide('final-score-div');" 
+            <button class="final-restart-btn btn" id="show-answer-button" 
+            onclick="visitPage(); showHide('answers-container'); showHide('final-score-div');" 
             type="button">Show<br class="button-break">
                 Answers</button>
            </div>
            <div class="restart-quiz-box">
-            <button class="final-restart-btn btn" type="button" onclick="visitPage(); showHide('answers-container'); showHide('final-score-div'); resetGame()">Restart<br class="button-break">
+            <button class="final-restart-btn btn" type="button" 
+            onclick="visitPage(); showHide('answers-container'); showHide('final-score-div'); resetGame()">Restart<br class="button-break">
             Quiz</button>
             </div>
        </div>
    </div>
-   </section>
+</section>
     
    <!--Section that displays the answers to the Quiz Questions-->
 
-   <section>
+<section>
     <div class="game-area" id="answers-container" style="display: none;">
         <div id="answers">
             <h1 class="page-message">Answers</h1>
@@ -126,13 +128,12 @@
             <p>Proxima Centauri</p>
         </div>
         <div class="restart-quiz-box">
-            <button class="btn final-restart-btn" onclick="visitPage(); showHide('final-score-div'); showHide('username-div'); resetGame()"  type="button">Restart Quiz</button>
+            <button class="btn final-restart-btn" 
+            onclick="visitPage(); showHide('final-score-div'); showHide('username-div'); resetGame()"  type="button">Restart Quiz</button>
         </div>
     </div>
 </section>
     
-
-
-    <script src="assests/js/game.js" ></script>
+<script src="assests/js/game.js" ></script>
 </body>
 </html>
